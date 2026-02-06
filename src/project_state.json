@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Build a customer-facing website for Makana Man (premium healthy, high-protein snacks for all ages).",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-customer-facing-marketing-website-for-makana-packet-with-a-clear-navigation-and-the-following-pages-sections-home-hero-value-proposition-packets-products-list-of-available-packets-with-details-about-brand-story-and-contact-inquiry-form-business-contact-info",
+      "title": "Create a customer-facing marketing website for “Makana Packet” with a clear navigation and the following pages/sections: Home (hero + value proposition), Packets/Products (list of available packets with details), About (brand story), and Contact (inquiry form + business contact info).",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-inquiry-submission-so-customer-messages-from-the-contact-form-are-stored-in-the-motoko-backend-and-can-be-retrieved-by-an-admin-only-view-in-the-frontend-simple-passwordless-gating-is-acceptable-if-internet-identity-is-not-configured-yet",
+      "title": "Implement inquiry submission so customer messages from the Contact form are stored in the Motoko backend and can be retrieved by an admin-only view in the frontend (simple passwordless gating is acceptable if Internet Identity is not configured yet).",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-coherent-distinctive-visual-theme-across-the-site-colors-typography-spacing-and-components-appropriate-for-a-customer-facing-brand-site-for-makana-packet-and-keep-styling-consistent-across-all-pages-do-not-use-a-blue-purple-theme",
+      "title": "Apply a coherent, distinctive visual theme across the site (colors, typography, spacing, and components) appropriate for a customer-facing brand site for Makana Packet, and keep styling consistent across all pages (do not use a blue/purple theme).",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-basic-seo-and-usability-essentials-page-titles-meta-description-defaults-accessible-headings-keyboard-navigable-menu-and-a-responsive-layout-that-passes-a-basic-accessibility-check-labels-on-form-fields-sufficient-contrast-focus-states",
+      "title": "Add basic SEO and usability essentials: page titles, meta description defaults, accessible headings, keyboard-navigable menu, and a responsive layout that passes a basic accessibility check (labels on form fields, sufficient contrast, focus states).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-render-generated-brand-images-as-static-assets-from-frontend-public-assets-generated-and-use-them-in-the-home-hero-and-packets-products-section",
+      "title": "Render generated brand images as static assets from frontend/public/assets/generated and use them in the Home hero and Packets/Products section.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-rename-the-customer-facing-brand-site-name-from-makana-packet-to-makana-man-across-the-frontend-ui-including-the-header-logo-text-logo-alt-text-footer-branding-and-any-other-visible-occurrences",
+      "title": "Rename the customer-facing brand/site name from “Makana Packet” to “Makana Man” across the frontend UI, including the header logo text, logo alt text, footer branding, and any other visible occurrences.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-customer-facing-marketing-copy-to-describe-makana-man-as-premium-quality-snacks-that-are-healthy-high-protein-and-suitable-for-all-ages-replacing-existing-gift-packets-positioning-on-the-main-marketing-pages",
+      "title": "Update customer-facing marketing copy to describe Makana Man as premium quality snacks that are healthy, high-protein, and suitable for all ages, replacing existing “gift packets” positioning on the main marketing pages.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-seo-facing-page-titles-to-use-makana-man-and-reflect-the-snacks-positioning-premium-healthy-high-protein-snacks-on-home-about-packets-and-contact-pages",
+      "title": "Update SEO-facing page titles to use “Makana Man” and reflect the snacks positioning (premium healthy high-protein snacks) on Home, About, Packets, and Contact pages.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-static-product-list-content-currently-defined-as-packets-so-that-the-displayed-items-and-descriptions-are-written-as-premium-healthy-snack-products-high-protein-rather-than-gift-packets-while-keeping-the-existing-route-path-and-image-asset-references-intact",
+      "title": "Update the static product list content currently defined as “packets” so that the displayed items and descriptions are written as premium healthy snack products (high-protein) rather than gift packets, while keeping the existing route/path and image asset references intact.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a customer-facing website for Makana Packet",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Rename the site/brand to “Makana Man” and update customer-facing copy to describe premium healthy high-protein snacks for all ages",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Makana Man",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

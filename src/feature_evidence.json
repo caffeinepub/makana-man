@@ -1,0 +1,95 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-rename-the-customer-facing-brand-site-name-from-makana-packet-to-makana-man-across-the-frontend-ui-including-the-header-logo-text-logo-alt-text-footer-branding-and-any-other-visible-occurrences",
+      "featureTitle": "Rename the customer-facing brand/site name from “Makana Packet” to “Makana Man” across the frontend UI, including the header logo text, logo alt text, footer branding, and any other visible occurrences.",
+      "files": [
+        "frontend/src/components/layout/Footer.tsx",
+        "frontend/src/components/nav/HeaderNav.tsx",
+        "frontend/src/pages/AboutPage.tsx",
+        "frontend/src/pages/ContactPage.tsx",
+        "frontend/src/pages/HomePage.tsx",
+        "frontend/src/pages/PacketsPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-customer-facing-marketing-copy-to-describe-makana-man-as-premium-quality-snacks-that-are-healthy-high-protein-and-suitable-for-all-ages-replacing-existing-gift-packets-positioning-on-the-main-marketing-pages",
+      "featureTitle": "Update customer-facing marketing copy to describe Makana Man as premium quality snacks that are healthy, high-protein, and suitable for all ages, replacing existing “gift packets” positioning on the main marketing pages.",
+      "files": [
+        "frontend/src/components/layout/Footer.tsx",
+        "frontend/src/pages/AboutPage.tsx",
+        "frontend/src/pages/ContactPage.tsx",
+        "frontend/src/pages/HomePage.tsx",
+        "frontend/src/pages/PacketsPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-seo-facing-page-titles-to-use-makana-man-and-reflect-the-snacks-positioning-premium-healthy-high-protein-snacks-on-home-about-packets-and-contact-pages",
+      "featureTitle": "Update SEO-facing page titles to use “Makana Man” and reflect the snacks positioning (premium healthy high-protein snacks) on Home, About, Packets, and Contact pages.",
+      "files": [
+        "frontend/index.html",
+        "frontend/src/pages/AboutPage.tsx",
+        "frontend/src/pages/ContactPage.tsx",
+        "frontend/src/pages/HomePage.tsx",
+        "frontend/src/pages/PacketsPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-static-product-list-content-currently-defined-as-packets-so-that-the-displayed-items-and-descriptions-are-written-as-premium-healthy-snack-products-high-protein-rather-than-gift-packets-while-keeping-the-existing-route-path-and-image-asset-references-intact",
+      "featureTitle": "Update the static product list content currently defined as “packets” so that the displayed items and descriptions are written as premium healthy snack products (high-protein) rather than gift packets, while keeping the existing route/path and image asset references intact.",
+      "files": [
+        "frontend/src/content/packets.ts",
+        "frontend/src/pages/PacketsPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

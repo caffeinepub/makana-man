@@ -1,0 +1,43 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-06T15:43:43.530Z",
+  "summary": "Diff implements the Makana Man rebrand and updates key marketing copy across Header, Footer, Home, About, Packets, and Contact pages, including snack-focused SEO document titles and snack-focused packet/product list copy while keeping existing /packets routing and generated asset image paths.",
+  "missing_requirements": [],
+  "hallucinated_features": [
+    {
+      "description": "SEO utility hook/module added or updated to set titles/meta descriptions dynamically (frontend/src/lib/seo.ts).",
+      "reason": "The diff summary claims changes to this file, but it is not shown among the modified files list/snippets; only page-level document.title updates are evidenced.",
+      "evidence": [
+        "frontend-file-summaries.txt"
+      ]
+    },
+    {
+      "description": "Global styling/theme overhaul (updated OKLCH palette, focus states) in frontend/src/index.css.",
+      "reason": "Mentioned in the file summaries, but the diff does not show frontend/src/index.css as modified or provide any snippet evidence.",
+      "evidence": [
+        "frontend-file-summaries.txt"
+      ]
+    },
+    {
+      "description": "Tailwind theme/font/token updates in frontend/tailwind.config.js.",
+      "reason": "Mentioned in the file summaries, but the diff does not show frontend/tailwind.config.js as modified or provide any snippet evidence.",
+      "evidence": [
+        "frontend-file-summaries.txt"
+      ]
+    }
+  ],
+  "confidence": 0.74,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/index.html",
+    "frontend/src/components/layout/Footer.tsx",
+    "frontend/src/components/nav/HeaderNav.tsx",
+    "frontend/src/content/packets.ts",
+    "frontend/src/pages/AboutPage.tsx",
+    "frontend/src/pages/ContactPage.tsx",
+    "frontend/src/pages/HomePage.tsx",
+    "frontend/src/pages/PacketsPage.tsx",
+    "project_state.json"
+  ]
+}

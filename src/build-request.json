@@ -1,0 +1,107 @@
+{
+  "kind": "build_request",
+  "title": "Rename brand to Makana Man and update marketing copy for premium healthy high-protein snacks",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-6",
+      "text": "Rename the customer-facing brand/site name from “Makana Packet” to “Makana Man” across the frontend UI, including the header logo text, logo alt text, footer branding, and any other visible occurrences.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Make site name makana man"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Header shows “Makana Man” as the site name and the logo image alt text no longer says “Makana Packet”.",
+        "Footer branding text no longer references “Makana Packet”.",
+        "No visible customer-facing text on Home/About/Packets/Contact pages displays “Makana Packet” (except where it is part of an unchanged asset filename or URL)."
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Update customer-facing marketing copy to describe Makana Man as premium quality snacks that are healthy, high-protein, and suitable for all ages, replacing existing “gift packets” positioning on the main marketing pages.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "It's a snacks, it's premium quality and very good for health more protin food for every age ,"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Home page hero headline and supporting paragraph describe premium, healthy, high-protein snacks for all ages (in clear English).",
+        "Home page “Why Choose …?” section headings and descriptions are updated so they describe snacks/quality/health/high-protein rather than gift packets.",
+        "About page story/mission content is updated to align with the snacks brand (premium quality, healthy, high-protein, for every age) and removes gift-packet-specific language.",
+        "Packets page main heading/intro text and the “custom” CTA section copy are updated so they describe snack products (and/or snack bundles) rather than gift packets.",
+        "Contact page introductory copy reflects snack product inquiries (e.g., product questions, bulk orders, custom snack bundles) rather than gift packets."
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Update SEO-facing page titles to use “Makana Man” and reflect the snacks positioning (premium healthy high-protein snacks) on Home, About, Packets, and Contact pages.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Make site name makana man"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Home page document title uses “Makana Man” and a snack-focused descriptor (no “Makana Packet”).",
+        "About page document title uses “Makana Man”.",
+        "Packets page document title uses “Makana Man”.",
+        "Contact page document title uses “Makana Man”."
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Update the static product list content currently defined as “packets” so that the displayed items and descriptions are written as premium healthy snack products (high-protein) rather than gift packets, while keeping the existing route/path and image asset references intact.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "It's a snacks, it's premium quality and very good for health more protin food for every age ,"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The list rendered on the /packets page uses snack-focused names and descriptions (premium, healthy, high-protein) instead of gift-packet themes.",
+        "Existing image paths under /assets/generated/ used by the product list continue to work (no broken images introduced by the copy update)."
+      ]
+    }
+  ],
+  "constraints": [
+    "Frontend immutable paths (frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui) must not be edited.",
+    "Keep the backend single-actor architecture; no backend changes are required for this request."
+  ],
+  "nonGoals": [
+    "Generating or replacing brand images (logo/hero/product images).",
+    "Changing routing structure (e.g., renaming the /packets URL path).",
+    "Changing inquiry backend storage/admin inquiry retrieval behavior."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [
+      "Use the brand name “Makana Man” in all customer-facing UI text.",
+      "Position the business as premium, healthy, high-protein snacks suitable for all ages (English copy)."
+    ],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

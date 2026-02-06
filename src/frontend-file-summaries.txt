@@ -1,0 +1,20 @@
+{
+  "frontend/src/App.tsx": "Main application component with TanStack Router setup, defining routes for Home, Packets, About, Contact, and Admin Inquiries pages with SiteLayout as the root component.",
+  "frontend/src/components/layout/SiteLayout.tsx": "Root layout component that wraps all pages with HeaderNav, main content area using Outlet, and Footer for consistent site structure.",
+  "frontend/src/components/layout/Footer.tsx": "Site footer with logo, quick links navigation, contact information, and attribution; updated to display \"Makana Man\" branding and premium healthy high-protein snacks tagline.",
+  "frontend/src/components/nav/HeaderNav.tsx": "Responsive header navigation with logo, desktop menu, mobile sheet menu, and login button; updated to display \"Makana Man\" branding.",
+  "frontend/src/components/auth/LoginButton.tsx": "Authentication button component using Internet Identity hook to handle login/logout with appropriate icons and loading states, clearing query cache on logout.",
+  "frontend/src/components/auth/AdminGate.tsx": "Authorization wrapper component that checks user authentication and admin role, displaying appropriate UI states for loading, login prompt, access denied, or authorized content.",
+  "frontend/src/components/forms/ContactForm.tsx": "Contact form component with name, email, phone, and message fields; handles submission to backend with loading, success, and error states using React Query mutation.",
+  "frontend/src/pages/HomePage.tsx": "Home page with hero section, value proposition featuring three feature cards (High Protein, Healthy & Nutritious, Premium Quality), and CTA section; fully rebranded to position Makana Man as premium healthy high-protein snacks for all ages.",
+  "frontend/src/pages/PacketsPage.tsx": "Snacks listing page displaying three product cards with images from generated assets, descriptions, and inquiry CTAs, plus custom snack bundles section; updated to reflect snack products positioning.",
+  "frontend/src/pages/AboutPage.tsx": "About page telling the Makana Man brand story with mission statement and three value pillars (Made with Care, Premium Ingredients, For Every Age); repositioned to focus on healthy high-protein snacks for all ages.",
+  "frontend/src/pages/ContactPage.tsx": "Contact page with two-column layout featuring ContactForm component and contact information cards (email, phone, business hours) plus bulk orders and custom bundles callout; updated to reflect snack product inquiries.",
+  "frontend/src/pages/admin/AdminInquiriesPage.tsx": "Admin-only page wrapped in AdminGate that displays all customer inquiries sorted by most recent first, showing name, email, message, and inquiry ID in card format.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for all backend operations including user profile management, user role checking, inquiry submission, and fetching all inquiries with proper actor dependency handling.",
+  "frontend/src/content/packets.ts": "Static data file defining three premium healthy high-protein snack products (Protein Power Mix, Energy Boost Bundle, Wellness Variety Pack) with names, descriptions, and references to generated image assets.",
+  "frontend/src/lib/seo.ts": "SEO utility hooks for setting page titles and meta descriptions dynamically on each page for better search engine optimization.",
+  "frontend/src/index.css": "Global styles with warm, earthy OKLCH color palette (coral and sand tones) for both light and dark modes, custom color utilities, and accessible focus states avoiding blue/purple themes.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending theme with coral/sand color tokens, Playfair Display font for headings, Inter for body text, custom shadows, and maintaining all shadcn/ui presets.",
+  "frontend/index.html": "HTML entry point with updated page title to \"Makana Man\" for initial load before React hydration."
+}

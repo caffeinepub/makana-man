@@ -1,0 +1,106 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-06T15:43:43.533Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 4,
+    "implemented": 4,
+    "items": [
+      {
+        "id": "REQ-6",
+        "summary": "Rename the customer-facing brand/site name from “Makana Packet” to “Makana Man” across the frontend UI, including the header logo text, logo alt text, footer branding, and any other visible occurrences.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/nav/HeaderNav.tsx",
+          "frontend/src/components/layout/Footer.tsx",
+          "frontend/src/pages/HomePage.tsx",
+          "frontend/src/pages/AboutPage.tsx",
+          "frontend/src/pages/PacketsPage.tsx",
+          "frontend/src/pages/ContactPage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/nav/HeaderNav.tsx",
+          "frontend/src/components/layout/Footer.tsx",
+          "frontend/src/pages/HomePage.tsx",
+          "frontend/src/pages/AboutPage.tsx",
+          "frontend/src/pages/PacketsPage.tsx",
+          "frontend/src/pages/ContactPage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-7",
+        "summary": "Update customer-facing marketing copy to describe Makana Man as premium quality snacks that are healthy, high-protein, and suitable for all ages, replacing existing “gift packets” positioning on the main marketing pages.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/HomePage.tsx",
+          "frontend/src/pages/AboutPage.tsx",
+          "frontend/src/pages/PacketsPage.tsx",
+          "frontend/src/pages/ContactPage.tsx",
+          "frontend/src/components/layout/Footer.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/HomePage.tsx",
+          "frontend/src/pages/AboutPage.tsx",
+          "frontend/src/pages/PacketsPage.tsx",
+          "frontend/src/pages/ContactPage.tsx",
+          "frontend/src/components/layout/Footer.tsx"
+        ]
+      },
+      {
+        "id": "REQ-8",
+        "summary": "Update SEO-facing page titles to use “Makana Man” and reflect the snacks positioning (premium healthy high-protein snacks) on Home, About, Packets, and Contact pages.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/HomePage.tsx",
+          "frontend/src/pages/AboutPage.tsx",
+          "frontend/src/pages/PacketsPage.tsx",
+          "frontend/src/pages/ContactPage.tsx",
+          "frontend/index.html"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/HomePage.tsx",
+          "frontend/src/pages/AboutPage.tsx",
+          "frontend/src/pages/PacketsPage.tsx",
+          "frontend/src/pages/ContactPage.tsx",
+          "frontend/index.html"
+        ]
+      },
+      {
+        "id": "REQ-9",
+        "summary": "Update the static product list content currently defined as “packets” so that the displayed items and descriptions are written as premium healthy snack products (high-protein) rather than gift packets, while keeping the existing route/path and image asset references intact.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/content/packets.ts",
+          "frontend/src/pages/PacketsPage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/content/packets.ts",
+          "frontend/src/pages/PacketsPage.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "build-template/README.md",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/index.html",
+    "frontend/src/components/layout/Footer.tsx",
+    "frontend/src/components/nav/HeaderNav.tsx",
+    "frontend/src/content/packets.ts",
+    "frontend/src/pages/AboutPage.tsx",
+    "frontend/src/pages/ContactPage.tsx",
+    "frontend/src/pages/HomePage.tsx",
+    "frontend/src/pages/PacketsPage.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

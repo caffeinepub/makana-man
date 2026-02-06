@@ -1,0 +1,143 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Rename brand to Makana Man and refresh snack-focused marketing + SEO copy",
+  "requirements": [
+    {
+      "id": "REQ-6",
+      "summary": "Rename all customer-facing brand mentions from “Makana Packet” to “Makana Man” across the public UI (header/footer/pages) without changing asset filenames/paths.",
+      "acceptanceCriteria": [
+        "Header shows “Makana Man” as the site name and the logo image alt text no longer says “Makana Packet”.",
+        "Footer branding text no longer references “Makana Packet”.",
+        "No visible customer-facing text on Home/About/Packets/Contact pages displays “Makana Packet” (except where it is part of an unchanged asset filename or URL)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/nav/HeaderNav.tsx",
+          "operation": "modify",
+          "description": "Update the visible site name text and logo alt text from “Makana Packet” to “Makana Man”, keeping existing logo image path intact."
+        },
+        {
+          "path": "frontend/src/components/layout/Footer.tsx",
+          "operation": "modify",
+          "description": "Replace footer brand references to “Makana Packet” with “Makana Man” (including logo alt text) and update any other visible footer branding occurrences (e.g., email text if it includes the old brand)."
+        },
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "modify",
+          "description": "Remove/replace any remaining visible occurrences of “Makana Packet” on the Home page so the customer-facing copy reflects “Makana Man”."
+        },
+        {
+          "path": "frontend/src/pages/AboutPage.tsx",
+          "operation": "modify",
+          "description": "Remove/replace any remaining visible occurrences of “Makana Packet” on the About page so the customer-facing copy reflects “Makana Man”."
+        },
+        {
+          "path": "frontend/src/pages/PacketsPage.tsx",
+          "operation": "modify",
+          "description": "Remove/replace any remaining visible occurrences of “Makana Packet” on the Packets page so the customer-facing copy reflects “Makana Man”, while keeping the /packets route unchanged."
+        },
+        {
+          "path": "frontend/src/pages/ContactPage.tsx",
+          "operation": "modify",
+          "description": "Remove/replace any remaining visible occurrences of “Makana Packet” on the Contact page so the customer-facing copy reflects “Makana Man” (including visible contact email text if needed)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Update marketing copy to position Makana Man as premium, healthy, high-protein snacks for all ages, replacing gift-packet positioning on main pages.",
+      "acceptanceCriteria": [
+        "Home page hero headline and supporting paragraph describe premium, healthy, high-protein snacks for all ages (in clear English).",
+        "Home page “Why Choose …?” section headings and descriptions are updated so they describe snacks/quality/health/high-protein rather than gift packets.",
+        "About page story/mission content is updated to align with the snacks brand (premium quality, healthy, high-protein, for every age) and removes gift-packet-specific language.",
+        "Packets page main heading/intro text and the “custom” CTA section copy are updated so they describe snack products (and/or snack bundles) rather than gift packets.",
+        "Contact page introductory copy reflects snack product inquiries (e.g., product questions, bulk orders, custom snack bundles) rather than gift packets."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "modify",
+          "description": "Rewrite the hero headline/paragraph and the “Why Choose …?” section content to describe premium, healthy, high-protein snacks suitable for all ages; remove gift-packet framing (including updating the hero image alt text to match snacks positioning without changing the image)."
+        },
+        {
+          "path": "frontend/src/pages/AboutPage.tsx",
+          "operation": "modify",
+          "description": "Update story/mission copy to align with a premium healthy high-protein snacks brand for all ages; remove gift-packet-specific language while keeping the page structure and existing visuals."
+        },
+        {
+          "path": "frontend/src/pages/PacketsPage.tsx",
+          "operation": "modify",
+          "description": "Update the page heading/intro and the custom CTA block to describe snack products and/or snack bundles (keeping the /packets URL and existing layout intact)."
+        },
+        {
+          "path": "frontend/src/pages/ContactPage.tsx",
+          "operation": "modify",
+          "description": "Update the introductory paragraph and any “custom orders” copy to invite snack-related inquiries (product questions, bulk orders, custom snack bundles) instead of gift packets."
+        },
+        {
+          "path": "frontend/src/components/layout/Footer.tsx",
+          "operation": "modify",
+          "description": "Update the footer brand tagline/description so it describes premium healthy high-protein snacks (not gift packets)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Update SEO-facing document titles for Home, About, Packets, and Contact pages to use “Makana Man” and snack-focused positioning.",
+      "acceptanceCriteria": [
+        "Home page document title uses “Makana Man” and a snack-focused descriptor (no “Makana Packet”).",
+        "About page document title uses “Makana Man”.",
+        "Packets page document title uses “Makana Man”.",
+        "Contact page document title uses “Makana Man”."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "modify",
+          "description": "Update the Home page document.title string to use “Makana Man” and a premium healthy high-protein snacks descriptor (remove “Makana Packet”)."
+        },
+        {
+          "path": "frontend/src/pages/AboutPage.tsx",
+          "operation": "modify",
+          "description": "Update the About page document.title string to use “Makana Man” (remove “Makana Packet”)."
+        },
+        {
+          "path": "frontend/src/pages/PacketsPage.tsx",
+          "operation": "modify",
+          "description": "Update the Packets page document.title string to use “Makana Man” and reflect snack products/bundles (remove “Makana Packet”)."
+        },
+        {
+          "path": "frontend/src/pages/ContactPage.tsx",
+          "operation": "modify",
+          "description": "Update the Contact page document.title string to use “Makana Man” (remove “Makana Packet”)."
+        },
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Update the initial HTML <title> to “Makana Man” so first paint/initial load does not show “Makana Packet” before React updates the document title."
+        }
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "summary": "Rewrite the static “packets” product list content to be premium healthy high-protein snack products while keeping current routes and image asset references unchanged.",
+      "acceptanceCriteria": [
+        "The list rendered on the /packets page uses snack-focused names and descriptions (premium, healthy, high-protein) instead of gift-packet themes.",
+        "Existing image paths under /assets/generated/ used by the product list continue to work (no broken images introduced by the copy update)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/content/packets.ts",
+          "operation": "modify",
+          "description": "Update the exported static list items (name, shortDescription, description) to describe premium, healthy, high-protein snack products/bundles; keep the existing image fields exactly pointing to the current /assets/generated/* files."
+        },
+        {
+          "path": "frontend/src/pages/PacketsPage.tsx",
+          "operation": "modify",
+          "description": "Adjust any remaining UI copy tied to the rendered list (e.g., button/CTA text) to be snack-focused while continuing to render the same static list and preserving all image references."
+        }
+      ]
+    }
+  ]
+}

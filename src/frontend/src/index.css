@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.625rem;
+        
+        /* Warm, earthy palette inspired by Hawaiian culture and gift-giving */
+        /* Coral - primary brand color */
+        --coral: 0.68 0.18 25;
+        --coral-dark: 0.58 0.20 25;
+        
+        /* Sand/Beige - warm neutral */
+        --sand: 0.85 0.08 65;
+        --sand-dark: 0.65 0.12 55;
+        
+        /* Warm neutrals */
+        --background: 0.98 0.01 65;
+        --foreground: 0.20 0.02 25;
+        --card: 1 0 0;
+        --card-foreground: 0.20 0.02 25;
+        --popover: 1 0 0;
+        --popover-foreground: 0.20 0.02 25;
+        
+        /* Primary uses coral */
+        --primary: 0.68 0.18 25;
+        --primary-foreground: 0.99 0.01 65;
+        
+        /* Secondary uses warm sand tones */
+        --secondary: 0.92 0.04 55;
+        --secondary-foreground: 0.25 0.03 25;
+        
+        /* Muted warm grays */
+        --muted: 0.94 0.02 55;
+        --muted-foreground: 0.50 0.03 35;
+        
+        /* Accent uses deeper coral */
+        --accent: 0.75 0.15 30;
+        --accent-foreground: 0.99 0.01 65;
+        
+        /* Destructive - warm red */
+        --destructive: 0.577 0.245 27.325;
+        --destructive-foreground: 0.99 0.01 65;
+        
+        /* Borders and inputs */
+        --border: 0.88 0.03 55;
+        --input: 0.88 0.03 55;
+        --ring: 0.68 0.18 25;
+        
+        /* Charts - warm palette */
+        --chart-1: 0.68 0.18 25;
+        --chart-2: 0.75 0.15 45;
+        --chart-3: 0.65 0.12 55;
+        --chart-4: 0.70 0.16 35;
+        --chart-5: 0.60 0.14 65;
+    }
+
+    .dark {
+        --background: 0.18 0.02 25;
+        --foreground: 0.96 0.01 65;
+        --card: 0.22 0.02 25;
+        --card-foreground: 0.96 0.01 65;
+        --popover: 0.20 0.02 25;
+        --popover-foreground: 0.96 0.01 65;
+        
+        --primary: 0.72 0.16 25;
+        --primary-foreground: 0.18 0.02 25;
+        
+        --secondary: 0.28 0.03 30;
+        --secondary-foreground: 0.96 0.01 65;
+        
+        --muted: 0.26 0.02 30;
+        --muted-foreground: 0.65 0.03 45;
+        
+        --accent: 0.35 0.04 35;
+        --accent-foreground: 0.96 0.01 65;
+        
+        --destructive: 0.65 0.22 27;
+        --destructive-foreground: 0.96 0.01 65;
+        
+        --border: 0.30 0.02 30;
+        --input: 0.30 0.02 30;
+        --ring: 0.68 0.16 25;
+        
+        --chart-1: 0.72 0.16 25;
+        --chart-2: 0.68 0.14 45;
+        --chart-3: 0.62 0.12 55;
+        --chart-4: 0.65 0.15 35;
+        --chart-5: 0.58 0.13 65;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+    
+    /* Focus visible styles for accessibility */
+    *:focus-visible {
+        @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+    }
+}
+
+@layer utilities {
+    /* Custom color utilities */
+    .text-coral {
+        color: oklch(var(--coral));
+    }
+    
+    .bg-coral {
+        background-color: oklch(var(--coral));
+    }
+    
+    .text-coral-dark {
+        color: oklch(var(--coral-dark));
+    }
+    
+    .bg-coral-dark {
+        background-color: oklch(var(--coral-dark));
+    }
+    
+    .text-sand {
+        color: oklch(var(--sand));
+    }
+    
+    .bg-sand {
+        background-color: oklch(var(--sand));
+    }
+    
+    .text-sand-dark {
+        color: oklch(var(--sand-dark));
+    }
+    
+    .bg-sand-dark {
+        background-color: oklch(var(--sand-dark));
+    }
+    
+    .fill-coral {
+        fill: oklch(var(--coral));
+    }
+}
